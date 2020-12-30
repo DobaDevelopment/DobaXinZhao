@@ -1,1 +1,1 @@
-# DobaXinZhao
+# XinZhao script, enjoy the game!
