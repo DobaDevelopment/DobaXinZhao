@@ -47,13 +47,13 @@ function XinZhao.LoadMenu()
         Menu.Checkbox("Jungle.E",   "Use E", false) end)
 
     Menu.NewTree("Prediction", "Prediction Settings", function()
-        Menu.Slider("Chance.W","HitChance W",0.75, 0, 1, 0.05) end)
+        Menu.Slider("Chance.W","HitChance W",0.25, 0, 1, 0.05) end)
 
     Menu.NewTree("Range", "Spell Range Settings", function()
-        Menu.Slider("Max.W","W Max Range", 875, 500, 875)
-        Menu.Slider("Min.W","W Min Range",50, 0, 400)
+        Menu.Slider("Max.W","W Max Range", 850, 500, 900)
+        Menu.Slider("Min.W","W Min Range", 0, 0, 300)
         Menu.Slider("Max.E","E Max Range", 875, 500, 875)
-        Menu.Slider("Min.E","E Min Range",50, 0, 400) end)
+        Menu.Slider("Min.E","E Min Range", 0, 0, 300) end)
 
     Menu.NewTree("Draw", "Drawing Settings", function()
         Menu.Checkbox("Drawing.W.Enabled",   "Draw W Range", false)
@@ -84,7 +84,7 @@ local E = Spell.Targeted({
         Type = "Circular",
         Key = "E"
 })
-local R = Spell.Active({
+local R = Spell.Active({    
         Slot = Enums.SpellSlots.R,
         Range = 325,
         Radius = 225,
