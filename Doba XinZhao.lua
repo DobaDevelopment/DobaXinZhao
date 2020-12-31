@@ -52,7 +52,7 @@ function XinZhao.LoadMenu()
     Menu.NewTree("Range", "Spell Range Settings", function()
         Menu.Slider("Max.W","W Max Range", 850, 500, 900)
         Menu.Slider("Min.W","W Min Range", 0, 0, 300)
-        Menu.Slider("Max.E","E Max Range", 875, 500, 875)
+        Menu.Slider("Max.E","E Max Range", 625, 500, 650)
         Menu.Slider("Min.E","E Min Range", 0, 0, 300) end)
 
     Menu.NewTree("Draw", "Drawing Settings", function()
